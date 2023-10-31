@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Party</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza Party</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container text-center">
+            <h1 class="display-4">Découvrez l'art de la pizza</h1>
+            <p class="lead">Savourez les meilleures pizzas artisanales de la ville.</p>
+            <!-- <a href="#menu" class="btn btn-primary btn-lg">Voir le Menu</a> -->
+        </div>
+    </header>
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <div class="container">
+        <h2 class="text-center">Notre Menu</h2>
+        <div id="pizzaCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#pizzaCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pizzaCarousel" data-slide-to="1"></li>
+                <li data-target="#pizzaCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-container">
+                        <img src="img/pizza-italian-food-vegetarian-food-pizza-margherita-wallpaper-preview.jpg" alt="Pizza 1">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Pizza Margherita</h3>
+                        <p>La classique Margherita avec de la mozzarella et de la sauce tomate.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="img/istockphoto-157741539-612x612.jpg" alt="Pizza 2">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Pizza Pepperoni</h3>
+                        <p>La délicieuse Pepperoni garnie de saucisses et de poivrons.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="img/LE-CAPRI-vegetarienne-jpeg.jpg" alt="Pizza 3">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Pizza Végétarienne</h3>
+                        <p>La pizza végétarienne garnie de légumes frais et de fromage.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#pizzaCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#pizzaCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="text-center">À Propos de Nous</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-pizza-slice fa-4x text-primary"></i>
+            </div>
+            <div class="col-md-8">
+                <p>Nous sommes une pizzeria passionnée par l'art de la pizza. Chez Pizza Party, nous mettons tout en œuvre pour vous offrir des pizzas artisanales de la plus haute qualité. Notre équipe de chefs talentueux prépare chaque pizza avec des ingrédients frais et savoureux, et nous sommes fiers de servir nos clients depuis de nombreuses années.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="text-center">Contactez-nous</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-envelope fa-4x text-primary"></i>
+                <h4>Email</h4>
+                <p>contact@votrepizzeria.com</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-phone fa-4x text-primary"></i>
+                <h4>Téléphone</h4>
+                <p>+33 1 23 45 67 89</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt fa-4x text-primary"></i>
+                <h4>Adresse</h4>
+                <p>123 Rue de la Pizza, 75000 Paris, France</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2023 Pizza Party. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
